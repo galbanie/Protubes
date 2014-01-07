@@ -15,3 +15,5 @@ Route::get('/', function()
 {
 	return View::make('default');
 });
+
+Route::get('membre', 'ControllerMembre@index');
