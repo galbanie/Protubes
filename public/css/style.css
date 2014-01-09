@@ -50,3 +50,22 @@ body, p, input, button, select, textarea, .btn{
     font-style: normal;
     font-size: 14px;
 }
+
+/* Images Buttons */
+
+.img-min-btn{
+    height: 28px;
+    width: 30px;;
+}
+
+/* Buttons Member */
+
+#link-control-nav-top{
+    min-width: 160px;
+}
+
+/* Buttons Member */
+
+#main-search{
+    width: 410px;
+}

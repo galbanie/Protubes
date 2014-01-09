@@ -3,13 +3,18 @@
 class ControllerMembre extends BaseController {
 
 	/**
+     * The layout that should be used for responses.
+     */
+    protected $layout = 'layouts.membre';
+
+	/**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
-		return View::make('membre');
+		$this->layout->content = View::make('membres.profile');
 	}
 
 	/**

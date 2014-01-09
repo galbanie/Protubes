@@ -13,7 +13,11 @@
 
 Route::get('/', function()
 {
-	return View::make('default');
+	return View::make('layouts.default');
 });
 
-Route::get('membre', 'ControllerMembre@index');
+Route::resource('membre', 'ControllerMembre');
+
+/*Route::get('membre', 'ControllerMembre@index');
+
+Route::get('membre/{identifiant}', 'ControllerMembre@show');*/
