@@ -14,7 +14,7 @@ class ControllerMembre extends BaseController {
 	 */
 	public function index()
 	{
-		$this->layout->content = View::make('membres.profile');
+		$this->layout->content = View::make('membres.index');
 	}
 
 	/**
@@ -24,7 +24,7 @@ class ControllerMembre extends BaseController {
 	 */
 	public function create()
 	{
-		//
+		
 	}
 
 	/**
@@ -34,7 +34,7 @@ class ControllerMembre extends BaseController {
 	 */
 	public function store()
 	{
-		//
+		
 	}
 
 	/**
@@ -80,5 +80,17 @@ class ControllerMembre extends BaseController {
 	{
 		//
 	}
+
+	/*public function inscription(){
+		$this->layout->content = View::make('layouts.formulaire')
+			->with('layout','membre')
+			->with('form','inscription');
+	}
+
+	public function connexion(){
+		$this->layout->content = View::make('layouts.formulaire')
+			->with('layout','membre')
+			->with('form','connexion');
+	}*/
 
 }

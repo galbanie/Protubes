@@ -3,8 +3,8 @@
     <head>
         <title>Protubes | </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="Ressources/Images/favicon.ico">
-        <link rel="icon" type="image/gif" href="Ressources/Images/animated_favicon1.gif">
+        {{ HTML::style('Ressources/Images/favicon.ico', array('rel'=>'shortcut icon','type'=>'','media'=>'')) }}
+        {{ HTML::style('Ressources/Images/animated_favicon1.gif', array('rel'=>'icon','type'=>'image/gif','media'=>'')) }}
         <!-- Bootstrap -->
         {{ HTML::style('bootstrap/css/bootstrap.min.css', array('media'=>'screen')) }}
         <!-- Font-Awesome -->
@@ -19,7 +19,7 @@
                 @include('menus.main-menu')
             </header>
             
-            <div class="container">
+            <div class="container panel panel-default" id="main">
                 <div class="row">
                     @section('gauche')
                     @show
@@ -38,6 +38,6 @@
     </body>
     <footer>
         <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        {{ HTML::script('bootstrap/js/bootstrap.min.js') }}
     </footer>
 </html>

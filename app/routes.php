@@ -16,7 +16,23 @@ Route::get('/', function()
 	return View::make('layouts.default');
 });
 
+Route::get('inscription', function()
+{
+	return View::make('layouts.formulaire')
+			->with('layout','membre')
+			->with('form','inscription');
+});
+
+Route::get('connexion', function()
+{
+	return View::make('layouts.formulaire')
+			->with('layout','membre')
+			->with('form','connexion');
+});
+
 Route::resource('membre', 'ControllerMembre');
+
+//Route::get('inscription', 'ControllerMembre@inscription');
 
 /*Route::get('membre', 'ControllerMembre@index');
 

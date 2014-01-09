@@ -28,19 +28,19 @@ html, body{
 }
 
 html{
-    font-size: 100%;
+    /*font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust : 100%;
+    -ms-text-size-adjust : 100%;*/
 }
 
 body{
-    background-color: #FFFFFF;
+    /*background-color: #FFFFFF;*/
     margin: 0;
     line-height: 1.5;
 }
 
 body, p{
-    color: #222;
+    /*color: #222;*/
     /*font-size: 1em;*/
 }
 
@@ -49,6 +49,15 @@ body, p, input, button, select, textarea, .btn{
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
+}
+
+/* Principal */
+
+#main{
+    position: relative;
+    min-height: 80.7%;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 /* Images Buttons */
