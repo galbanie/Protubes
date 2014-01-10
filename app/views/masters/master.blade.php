@@ -31,6 +31,7 @@
                 </div>
             </div>
 
+            <div class="spacer"></div>
             <footer id="footer">
                 @include('menus.footer-menu')
             </footer>
@@ -39,5 +40,6 @@
     <footer>
         <script src="http://code.jquery.com/jquery.js"></script>
         {{ HTML::script('bootstrap/js/bootstrap.min.js') }}
+        {{ HTML::script('js/protubes.js') }}
     </footer>
 </html>

@@ -55,9 +55,26 @@ body, p, input, button, select, textarea, .btn{
 
 #main{
     position: relative;
-    min-height: 80.7%;
+    min-height: 81.7%;
     padding-top: 20px;
     padding-bottom: 30px;
+}
+
+/* Footer */
+
+.spacer{
+    clear: both;
+}
+
+#footer{
+    /*position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;*/
+}
+
+.no-margin-bottom{
+    margin-bottom: 0 !important;
 }
 
 /* Images Buttons */

@@ -19,6 +19,7 @@ Route::get('/', function()
 Route::get('inscription', function()
 {
 	return View::make('layouts.formulaire')
+			->with('titre','inscription')
 			->with('layout','membre')
 			->with('form','inscription');
 });
