@@ -13,10 +13,11 @@
 
 Route::get('/', function()
 {
+	//Session::flash('alertes', array(new Alerte(),new Alerte('danger')));
 	return View::make('layouts.default');
 });
 
-Route::get('inscription', function()
+Route::get('signup', function()
 {
 	return View::make('layouts.formulaire')
 			->with('titre','inscription')
@@ -24,7 +25,7 @@ Route::get('inscription', function()
 			->with('form','inscription');
 });
 
-Route::get('connexion', function()
+Route::get('login', function()
 {
 	return View::make('layouts.formulaire')
 			->with('layout','membre')

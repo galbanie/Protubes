@@ -14,7 +14,9 @@ class ControllerMembre extends BaseController {
 	 */
 	public function index()
 	{
-		$this->layout->content = View::make('membres.index');
+		//Session::flash('alertes', array(new Alerte(),new Alerte('danger')));
+		$this->layout->content = View::make('membres.index')
+			->with('membres',Membre::all());
 	}
 
 	/**
@@ -24,7 +26,10 @@ class ControllerMembre extends BaseController {
 	 */
 	public function create()
 	{
-		
+		/*DB::table('membre')->insert(array(
+    		array('nom' => 'taylor', 'prenom' => 'jack','email' => 'taylor@example.com', 'identifiant' => 'taylor'),
+    		array('nom' => 'dayle', 'prenom' => 'taylor','email' => 'dayle@example.com', 'identifiant' => 'dayle'),
+		));*/
 	}
 
 	/**

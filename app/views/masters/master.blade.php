@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Protubes | </title>
+        <title>Protubes | {{ isset($titre) ? $titre : 'Default' }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {{ HTML::style('Ressources/Images/favicon.ico', array('rel'=>'shortcut icon','type'=>'','media'=>'')) }}
         {{ HTML::style('Ressources/Images/animated_favicon1.gif', array('rel'=>'icon','type'=>'image/gif','media'=>'')) }}
@@ -19,7 +19,19 @@
                 @include('menus.main-menu')
             </header>
             
+            @if(Session::has('alertes'))
+            <div class="container">
+                @foreach(Session::get('alertes') as $alerte)    
+                    <div class="alert alert-{{{ $alerte->type }}} alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <a href="#" class="alert-link">...</a>
+                    </div>
+                @endforeach
+            </div>
+            @endif
+
             <div class="container panel panel-default" id="main">
+
                 <div class="row">
                     @section('gauche')
                     @show
