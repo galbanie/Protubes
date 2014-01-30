@@ -77,6 +77,7 @@
                     <div class="form-group">
                       <div class="col-sm-offset-2 col-sm-10">
                         <button type="submit" class="btn btn-default">Sign in</button>
+                        {{ HTML::link('signup', 'Sign Up',array('class'=>'btn btn-primary','role'=>'button')) }}
                       </div>
                     </div>
                   </form>

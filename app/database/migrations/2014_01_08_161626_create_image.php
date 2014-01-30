@@ -13,8 +13,8 @@ class CreateImage extends Migration {
 	{
 		Schema::create('image',function($table){
 			$table->increments('id');
-			$table->string('nom',70);
-			$table->text('description');
+			$table->string('nom',70)->nullable();
+			$table->text('description')->nullable();
 			$table->integer('fichier_id')->unsigned();
 		});
 	}

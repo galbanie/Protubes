@@ -17,6 +17,12 @@ Route::get('/', function()
 	return View::make('layouts.default');
 });
 
+Route::get('watch', function()
+{
+	//Session::flash('alertes', array(new Alerte(),new Alerte('danger')));
+	return View::make('layouts.watch');
+});
+
 Route::get('signup', function()
 {
 	return View::make('layouts.formulaire')
@@ -33,6 +39,8 @@ Route::get('login', function()
 });
 
 Route::resource('membre', 'ControllerMembre');
+
+//Route::controller('password', 'RemindersController');
 
 //Route::get('inscription', 'ControllerMembre@inscription');
 

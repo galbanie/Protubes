@@ -30,6 +30,13 @@
             </div>
             @endif
 
+            <div class="container">
+                <div class="row">
+                    @section('jumbotron')
+                    @show
+                </div>
+            </div>
+
             <div class="container panel panel-default" id="main">
 
                 <div class="row">

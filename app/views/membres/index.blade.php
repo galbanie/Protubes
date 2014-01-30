@@ -17,13 +17,14 @@
 				@endif
   					<div class="col-sm-6 col-md-4">
     					<div class="thumbnail">
-      						<img data-src="holder.js/300x200" alt="...">
+      						<!--img data-src="holder.js/300x200" src="" alt="..."-->
+      						{{ HTML::image('Ressources/Images/Profil_default.jpg','...', array('class'=>'img-circle')) }}
 	      					<div class="caption">
 		        				<h3>{{ $membre->identifiant }}</h3>
 		        				<p>...</p>
-		        				<p>
-		        					{{ HTML::linkAction('ControllerMembre@show', $membre->identifiant, array($membre->identifiant)) }}
-		        					<a href="#" class="btn btn-primary" role="button">Button</a> 
+		        				<p style="text-align: center;">
+		        					{{ HTML::linkAction('ControllerMembre@show', 'Profile', array($membre->identifiant),array('class'=>'btn btn-primary','role'=>'button')) }}
+		        					<!--a href="#" class="btn btn-primary" role="button">Button</a--> 
 		        					<a href="#" class="btn btn-default" role="button">Button</a>
 		        				</p>
 	      					</div>
